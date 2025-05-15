@@ -11,7 +11,7 @@ module VMS
   # Server
   # ===========
   # The hostname of the server. This is the IP address or domain name that the server is hosted on.
-  HOST = "67.146.168.246"
+  HOST = "gamingwithgoose.ddns.net"
   # The port that the server is hosted on. This is the port that the server is listening on.
   PORT = 16815
   # Whether or not to use TCP instead of UDP. TCP is more reliable, but UDP is faster.
