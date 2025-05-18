@@ -6845,3 +6845,12 @@ Flags = KeyItem
 CanUseInField = true
 FieldUse = Direct
 Description = A sleek device that evenly distributes battle experience to all party Pokémon by syncing brainwaves.
+#-------------------------------
+[STICKYGLOB]
+Name = Sticky Glob
+NamePlural = Sticky Globs
+Pocket = 1
+Price = 500
+Flags = UsableInBattle
+BattleUse = Direct
+Description = An item that prevents wild Pokémon from escaping.
