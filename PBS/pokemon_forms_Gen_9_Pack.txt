@@ -507,3 +507,32 @@ Weight = 77.0
 Shape = Head
 Pokedex = In this form, Terapagos resembles the world as the ancients saw it, and its Terastal energy is abnormally amplified.
 Flags = Legendary,TeraType_STELLAR
+#-------------------------------
+[PORYGON,1]
+FormName = Cyber
+Types = NORMAL,ELECTRIC
+BaseStats = 65,60,70,50,85,75
+Abilities = IONLINK
+HiddenAbilities = IONLINK
+Moves = 1,CONVERSION,1,TACKLE,1,THUNDERSHOCK,5,RECYCLE,10,MAGNETRISE,20,PSYBEAM,25,CONVERSION2,30,AGILITY,35,RECOVER,40,DISCHARGE,45,TRIATTACK,50,DOUBLEEDGE,55,LOCKON,60,ZAPCANNON
+Pokedex = A modified version of Porygon allowing communication to the cyber world.
+Evolutions = PORYGON2,Level,25
+#-------------------------------
+[PORYGON2,1]
+FormName = Cyber
+Types = NORMAL,ELECTRIC
+BaseStats = 85,80,90,70,105,95
+Abilities = IONLINK
+HiddenAbilities = IONLINK
+Pokedex = It was created by humans using the power of science. It has been given artificial intelligence that enables it to learn new gestures and emotions on its own.
+Evolutions = PORYGONZ,Item,THUNDERSTONE
+#-------------------------------
+[PORYGONZ,1]
+FormName = Cyber
+Types = NORMAL,ELECTRIC
+BaseStats = 85,80,70,100,135,75
+Abilities = IONLINK
+HiddenAbilities = IONLINK
+Pokedex = Additional software was installed to make it a better Pokémon. It began acting oddly, however.
+Generation = 4
+#-------------------------------
