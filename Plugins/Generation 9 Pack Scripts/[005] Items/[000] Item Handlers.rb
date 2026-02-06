@@ -29,6 +29,8 @@ ItemHandlers::UseOnPokemon.copy(:AWAKENING, :CHESTOBERRY, :BLUEFLUTE, :POKEFLUTE
 
 #===============================================================================
 # VIRUS capture rules at registration time (pre-consumption, no turn loss)
+# Only keeps what the global disablePokeBalls rule does NOT cover:
+# - Battle Chips only usable on VIRUS targets (message + enforcement)
 #===============================================================================
 module VirusBallRules
   CHIPS = [:BATTLECHIP, :BATTLECHIP2, :BATTLECHIP3, :BATTLECHIPMAX]
@@ -74,28 +76,14 @@ target_for_capture_item = proc { |battle, battler|
   next battler.pbDirectOpposing(true)
 }
 
-# --- Battle Chips: only usable on VIRUS targets (KEEP your working behavior) ---
+# --- Battle Chips: only usable on VIRUS targets (KEEP) ---
 ItemHandlers::CanUseInBattle.add(:BATTLECHIP, proc { |item, pokemon, battler, move, firstAction, battle, scene, showMessages|
   target = target_for_capture_item.call(battle, battler)
   next true if target&.pbHasType?(:VIRUS)
-  scene.pbDisplay(_INTL("This chip is useless on this Pokémon!")) if showMessages
+  VirusBallRules.display_handler_message(battle, scene, _INTL("This chip is useless on this Pokémon!")) if showMessages
   next false
 })
 ItemHandlers::CanUseInBattle.copy(:BATTLECHIP, :BATTLECHIP2, :BATTLECHIP3, :BATTLECHIPMAX)
-
-# --- All other Poké Balls: blocked on VIRUS targets (SHOW even when scene is nil) ---
-GameData::Item.each do |item_data|
-  next if !item_data.is_poke_ball?
-  next if VirusBallRules::CHIPS.include?(item_data.id)
-  ItemHandlers::CanUseInBattle.add(item_data.id, proc { |item, pokemon, battler, move, firstAction, battle, scene, showMessages|
-    target = target_for_capture_item.call(battle, battler)
-    if target&.pbHasType?(:VIRUS)
-      VirusBallRules.display_handler_message(battle, scene, _INTL("This ball is useless against a Virus!"))
-      next false
-    end
-    next true
-  })
-end
 
 #===============================================================================
 # Registration-time enforcement (silent; pre-consumption, no turn loss)
@@ -104,30 +92,34 @@ class Battle
   if instance_methods.include?(:pbRegisterItem)
     alias __virus_pbRegisterItem pbRegisterItem
 
-    def pbRegisterItem(*args)
+    def pbRegisterItem(*args, **kwargs)
       idxBattler = args[0]
       item       = args[1]
-      idxTarget  = args[2] rescue -1   # ignore any extra arg(s) safely
+      idxTarget  = args[2] rescue -1
 
       item_data = GameData::Item.try_get(item)
       item_id   = item_data ? item_data.id : item
 
       if item_data&.is_poke_ball?
-        target  = VirusBallRules.target_for(self, idxBattler, idxTarget)
-        is_chip = VirusBallRules::CHIPS.include?(item_id)
+        target   = VirusBallRules.target_for(self, idxBattler, idxTarget)
+        is_chip  = VirusBallRules::CHIPS.include?(item_id)
         is_virus = target && target.pbHasType?(:VIRUS)
 
-        # Chips only on VIRUS
+        # Chips only on VIRUS (KEEP)
         return false if is_chip && !is_virus
 
-        # Non-chips blocked on VIRUS
-        return false if !is_chip && is_virus
+        # NOTE:
+        # We intentionally do NOT block non-chip balls here, because your global
+        # rule disablePokeBalls already handles wild VIRUS fights.
+        # If you later want trainer/other battles to obey the same restriction,
+        # we can re-add a non-chip check here.
       end
 
-      return __virus_pbRegisterItem(*args)
+      return __virus_pbRegisterItem(*args, **kwargs)
     end
   end
 end
+
 
 
 #===============================================================================

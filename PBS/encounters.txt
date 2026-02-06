@@ -1241,7 +1241,7 @@ SuperRod
 Land,21
     40,PIDGEY,13,16
     34,MEOWTH,10,16
-	34,MEOWTH_1,10,16
+    34,MEOWTH_1,10,16
     13,BELLSPROUT,13,16
     13,ODDISH,13,16
 #-------------------------------
@@ -1432,8 +1432,8 @@ Cave,5
 [112] # Pokemon Tower 7F
 Cave,5
     75,GASTLY,15,19
-    10,CUBONE,17,19
     15,HAUNTER,23,25
+    10,CUBONE,17,19
 #-------------------------------
 [116] # ROUTE 8 SPRING
 Land,21
@@ -5937,7 +5937,7 @@ RockSmash,50
     3,MAGMAR,34,35
 Land,21
     95,GEODUDE,5,30
-    5,GRAVELER,35,35
+    5,GRAVELER,35
 #-------------------------------
 [431] # SUMMIT PATH 1F
 Cave,5
@@ -6016,7 +6016,7 @@ RockSmash,50
     3,MAGMAR,34,35
 Land,21
     95,GEODUDE,5,30
-    5,GRAVELER,35,35
+    5,GRAVELER,35
 #-------------------------------
 [442] # MT.EMBER AUTUMN
 RockSmash,50
@@ -6028,7 +6028,7 @@ RockSmash,50
     3,MAGMAR,34,35
 Land,21
     95,GEODUDE,5,30
-    5,GRAVELER,35,35
+    5,GRAVELER,35
 #-------------------------------
 [443] # MT.EMBER WINTER
 RockSmash,50
@@ -6040,7 +6040,7 @@ RockSmash,50
     3,MAGMAR,34,35
 Land,21
     95,GEODUDE,5,30
-    5,GRAVELER,35,35
+    5,GRAVELER,35
 #-------------------------------
 [447] # ICEFALL CAVE
 Cave,5
@@ -6116,37 +6116,41 @@ SuperRod
     2,SEADRA,25,35
     1,PSYDUCK,25,35
     1,SLOWPOKE,25,35
-#--------------------------------
+#-------------------------------
 [463] # BILL'S GARDEN
-Land
-	10,BULBASAUR,10
-	10,CHIKORITA,10
-	10,SNIVY,10
-	10,CHESPIN,10
-	10,ROWLET,10
-	10,TREECKO,10
-	10,TURTWIG,10
-	10,GROOKEY,10
-	10,SPRIGATITO,10
-Water
-	10,SQUIRTLE,10
-	10,TOTODILE,10
-	10,MUDKIP,10
-	10,PIPLUP,10
-	10,OSHAWOTT,10
-	10,FROAKIE,10
-	10,POPPLIO,10
-	10,SOBBLE,10
-	10,QUAXLY,10
-#--------------------------------
+Land,20
+    12,BULBASAUR,5,10
+    11,CHESPIN,5,10
+    11,CHIKORITA,5,10
+    11,GROOKEY,5,10
+    11,ROWLET,5,10
+    11,SNIVY,5,10
+    11,SPRIGATITO,5,10
+    11,TREECKO,5,10
+    11,TURTWIG,5,10
+Water,2
+    11,FROAKIE,5,10
+    10,MUDKIP,10
+    10,OSHAWOTT,10
+    10,PIPLUP,10
+    10,POPPLIO,10
+    10,QUAXLY,10
+    10,SOBBLE,10
+    10,SQUIRTLE,10
+    10,TOTODILE,10
+#-------------------------------
 [464] # FIRE CAVE
-Cave
-	10,CHARMANDER,10
-	10,CYNDAQUIL,10
-	10,TORCHIC,10
-	10,CHIMCHAR,10
-	10,TEPIG,10
-	10,FENNEKIN,10
-	10,LITTEN,10
-	10,SCORBUNNY,10
-	10,FUECOCO,10
+Cave,5
+    10,CHARMANDER,10
+    10,CHIMCHAR,10
+    10,CYNDAQUIL,10
+    10,FENNEKIN,10
+    10,FUECOCO,10
+    10,LITTEN,10
+    10,SCORBUNNY,10
+    10,TEPIG,10
+    10,TORCHIC,10
+#-------------------------------
+[465] # TV COMP
+Cave,21
+    100,BILLY,2,5
