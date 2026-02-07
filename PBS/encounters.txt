@@ -6118,7 +6118,7 @@ SuperRod
     1,SLOWPOKE,25,35
 #-------------------------------
 [463] # BILL'S GARDEN
-Land,20
+Land,6
     10,BULBASAUR,5,10
     10,CHESPIN,5,10
     10,CHIKORITA,5,10
@@ -6128,7 +6128,7 @@ Land,20
     10,SPRIGATITO,5,10
     10,TREECKO,5,10
     10,TURTWIG,5,10
-Water,2
+Water,6
     10,FROAKIE,5,10
     10,MUDKIP,5,10
     10,OSHAWOTT,5,10
@@ -6140,7 +6140,7 @@ Water,2
     10,TOTODILE,5,10
 #-------------------------------
 [464] # FIRE CAVE
-Cave,5
+Cave,6
     10,CHARMANDER,5,10
     10,CHIMCHAR,5,10
     10,CYNDAQUIL,5,10
@@ -6152,5 +6152,9 @@ Cave,5
     10,TORCHIC,5,10
 #-------------------------------
 [465] # TV COMP
-Cave,21
+Cave,6
     100,BILLY,2,5
+#-------------------------------
+[466] # FRIDGE COMP
+Cave,6
+    100,JELLY,2,5
