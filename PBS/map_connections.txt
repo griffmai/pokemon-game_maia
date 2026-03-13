@@ -1,0 +1,6 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+# ROUTE 101 (267) - OLDALE TOWN (278)
+267,North,6,278,South,0
+#  LITTLEROOT TOWN (260) - ROUTE 101 (267)
+260,North,2,267,South,0
