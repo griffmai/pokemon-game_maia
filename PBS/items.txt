@@ -6894,3 +6894,14 @@ Price = 1000
 BattleUse = OnFoe
 Flags = Consumable
 Description = An item that prevents wild Pokémon from escaping.
+#--------------------------------
+[MININGKIT]
+Name = Mining Kit
+NamePlural = Mining Kits
+Pocket = 8
+Price = 0
+SellPrice = 0
+CanUseInField = true
+FieldUse = Direct
+Flags = KeyItem
+Description = A mining tool that can be used on cave walls or rocks. It needs time to recharge after each use.
