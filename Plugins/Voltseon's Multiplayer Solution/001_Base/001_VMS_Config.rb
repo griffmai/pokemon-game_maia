@@ -5,7 +5,7 @@ module VMS
 
   # If true, the menu will show "Local Play" and "Online Play" options.
   # If false, only integrated server (local play) options will be available.
-  USE_EXTERNAL_SERVER = false
+  USE_EXTERNAL_SERVER = true
 
   # External server connection settings (used when "Online Play" is selected)
   EXTERNALHOST = "gamingwithgoose.ddns.net"
