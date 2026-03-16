@@ -57,3 +57,19 @@ RunCharset = pc6_run
 CycleCharset = pc6_bike
 SurfCharset = pc6_surf
 FishCharset = pc6_fish_offset
+#-------------------------------
+[7]
+TrainerType = POKEMONTRAINER_Lucas
+WalkCharset = trainer_POKEMONTRAINER_Lucas
+RunCharset = pc7_run
+CycleCharset = pc6_bike
+SurfCharset = pc6_surf
+FishCharset = pc6_fish_offset
+#-------------------------------
+[8]
+TrainerType = POKEMONTRAINER_Dawn
+WalkCharset = trainer_POKEMONTRAINER_Dawn
+RunCharset = pc8_run
+CycleCharset = pc6_bike
+SurfCharset = pc6_surf
+FishCharset = pc6_fish_offset
