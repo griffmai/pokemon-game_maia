@@ -6954,3 +6954,51 @@ Pocket = 1
 Price = 0
 FieldUse = OnPokemon
 Description = A marvellous flute that can summon Celebi to instantly purify a Shadow Pokémon.
+#-------------------------------
+[CUTITEM]
+Name = Hatchet
+NamePlural = Hatchets
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A key item the allows the use of CUT.
+#-------------------------------
+[ROCKSMASHITEM]
+Name = Power Glove
+NamePlural = Power Gloves
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A key item the allows the use of Rock Smash.
+#-------------------------------
+[STRENGTHITEM]
+Name = Power Bracelet
+NamePlural = Power Bracelets
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A key item the allows the use of Strength.
+#-------------------------------
+[SURFITEM]
+Name = Surfboard
+NamePlural = Surfboards
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A key item the allows the use of Surf.
+#-------------------------------
+[FLYITEM]
+Name = Flight Call
+NamePlural = Flight Calls
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A key item the allows the use of Fly.
+#-------------------------------
+[FLASHITEM]
+Name = Nightvision Goggles
+NamePlural = Nightvision Goggles
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A key item the allows the use of Flash.

@@ -26741,3 +26741,19 @@ Pokedex = Lugia is so powerful even a light fluttering of its wings can blow apa
 Generation = 2
 Flags = Legendary
 #-------------------------------
+[MISSINGNO]
+Name = MISSINGNO
+Types = FLYING,NORMAL
+BaseStats = 33,136,1,29,6,6
+GenderRatio = Genderless
+GrowthRate = Fast
+BaseExp = 60
+EVs = ATTACK,2
+CatchRate = 255
+Happiness = 50
+Abilities = TRACE
+Moves = 1,SKYATTACK,1,WATERGUN
+Color = Brown
+Category = Glitch
+Pokedex = A glitch Pokémon. No other information available
+Generation = 1
