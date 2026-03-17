@@ -14,7 +14,7 @@ EventHandlers.add(:following_pkmn_talk, :music_generic, proc { |pkmn, random_val
       _INTL("{1} is singing and humming."),
       _INTL("{1} is looking up at {2} with a happy expression."),
       _INTL("{1} swayed and danced around as it pleased."),
-      _INTL("{1} is JUMPing around in a carefree way!"),
+      _INTL("{1} is jumping around in a carefree way!"),
       _INTL("{1} is showing off its agility!"),
       _INTL("{1} is moving around happily!"),
       _INTL("Whoa! {1} suddenly started dancing in happiness!"),

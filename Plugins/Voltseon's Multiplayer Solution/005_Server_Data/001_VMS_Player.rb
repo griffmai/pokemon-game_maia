@@ -17,7 +17,7 @@ module VMS
     # Jumping information
     attr_accessor :jump_offset, :jumping_on_spot
     # Other data
-    attr_accessor :surfing, :diving, :surf_base_coords
+    attr_accessor :surfing, :diving, :surf_base_coords,:follower_active, :follower_graphic, :follower_direction
     # Custom information
     attr_accessor :state, :busy
 
@@ -58,6 +58,9 @@ module VMS
       # Custom information
       @state = [:idle, nil]
       @busy = false
+	  @follower_active = false
+	  @follower_graphic = nil
+	  @follower_direction = 2
     end
 
     def update(data)

@@ -9,22 +9,12 @@ end
 # Add Reflections to Following Pokemon sprite
 #-------------------------------------------------------------------------------
 class Sprite_Character
-  def set_reflection(viewport)
+  def set_reflection(viewport, event)
     @reflection = Sprite_Reflection.new(self, viewport) if !@reflection
   end
 end
 
-#-------------------------------------------------------------------------------
-# Refresh Following Pokemon sprites whenever the map is refreshed
-#-------------------------------------------------------------------------------
-EventHandlers.add(:on_enter_map, :erase_following_pkmn, proc { |_old_map_id|
-  event = FollowingPkmn.get_data
-  next if !event
-  FollowingPkmn.refresh(false)
-  $map_factory.maps.each { |map|
-    map.events[event.event_id]&.erase if event.original_map_id == event.current_map_id
-  }
-})
+
 
 class FollowerSprites
   #-----------------------------------------------------------------------------
@@ -35,17 +25,18 @@ class FollowerSprites
   def refresh(*args)
     ret = __followingpkmn__refresh(*args)
     return ret if !FollowingPkmn.can_check?
-    # event = FollowingPkmn.get_event
+    event = FollowingPkmn.get_event
     @sprites.each do |spr|
       next if !FollowingPkmn.get_data&.following_pkmn?
-      spr.set_reflection(@viewport)
+      spr.set_reflection(@viewport, event)
     end
     data = FollowingPkmn.get_data
     $map_factory.maps.each { |map|
-      map&.events[data.event_id]&.erase if data && data.original_map_id == data.current_map_id
+      map&.events&.[](data.event_id)&.erase if data && data.original_map_id == map&.events&.[](data.event_id)&.map_id
     }
     FollowingPkmn.refresh(false)
   end
+
   #-----------------------------------------------------------------------------
   # Adding DayNight and Status condition pulsing effect to Following Pokemon
   # sprite

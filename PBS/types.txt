@@ -128,7 +128,7 @@ Weaknesses = POISON,STEEL
 Resistances = FIGHTING,BUG,DARK
 Immunities = DRAGON
 #-------------------------------
-[VIRUS]
-Name = Virus
+[SHADOW]
+Name = Shadow
 IconPosition = 19
 IsSpecialType = true
