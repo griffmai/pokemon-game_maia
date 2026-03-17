@@ -37,7 +37,7 @@ Pokemon = BULBASAUR,9
     Moves = TACKLE,GROWL
 #-------------------------------
 [BUGCATCHER,Rick]
-LoseText = No! Caterpie can't hack it!
+LoseText = ...
 Pokemon = WEEDLE,6
 Pokemon = CATERPIE,6
 #-------------------------------
@@ -68,7 +68,6 @@ Pokemon = GEODUDE,10
 Pokemon = SANDSHREW,11
 #-------------------------------
 [LEADER_Brock,Brock]
-BattleBGM = GymLeader_Brock.mp3
 LoseText = I took you for granted, and so I lost.
 Pokemon = GEODUDE,12
     Moves = TACKLE,DEFENSECURL
@@ -2222,4 +2221,3 @@ Pokemon = EEVEE,5
 [RIVAL1,Blue,15]
 LoseText = WHAT? Unbelievable! I picked the wrong Pokémon!
 Pokemon = PIKACHU,5
-#-------------------------------
