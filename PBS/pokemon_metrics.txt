@@ -6479,3 +6479,15 @@ BackSprite = 0,0
 FrontSprite = 0,24
 ShadowX = 0
 ShadowSize = 0
+#-------------------------------
+[PIKACHU_2]
+BackSprite = 2,54
+FrontSprite = 5,28
+ShadowX = 0
+ShadowSize = 1
+#-------------------------------
+[EEVEE_1]
+BackSprite = 0,48
+FrontSprite = 2,31
+ShadowX = 0
+ShadowSize = 1
