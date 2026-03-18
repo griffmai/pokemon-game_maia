@@ -23,7 +23,7 @@ CUT_CONFIG = {
     :internal_name      => :CUTITEM,
     :active             => true,
     :needed_badge       => 0,
-    :needed_switches    => [91],
+    :needed_switches    => [89],
     :use_in_debug       => false
 }
 
@@ -31,7 +31,7 @@ STRENGTH_CONFIG = {
     :internal_name      => :STRENGTHITEM,
     :active             => true,
     :needed_badge       => 0,
-    :needed_switches    => [],
+    :needed_switches    => [100],
     :use_in_debug       => false
 }
 
@@ -39,7 +39,7 @@ SURF_CONFIG = {
     :internal_name      => :SURFITEM,
     :active             => true,
     :needed_badge       => 0,
-    :needed_switches    => [],
+    :needed_switches    => [101],
     :use_in_debug       => false
 }
 
@@ -47,7 +47,7 @@ FLY_CONFIG = {
     :internal_name      => :FLYITEM,
     :active             => true,
     :needed_badge       => 0,
-    :needed_switches    => [],
+    :needed_switches    => [94],
     :use_in_debug       => false
 }
 
@@ -63,7 +63,7 @@ FLASH_CONFIG = {
     :internal_name      => :FLASHITEM,
     :active             => true,
     :needed_badge       => 0,
-    :needed_switches    => [],
+    :needed_switches    => [83],
     :use_in_debug       => false
 }
 

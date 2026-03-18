@@ -2221,3 +2221,56 @@ Pokemon = EEVEE,5
 [RIVAL1,Blue,15]
 LoseText = WHAT? Unbelievable! I picked the wrong Pokémon!
 Pokemon = PIKACHU,5
+#-------------------------------
+[RIVAL1,Blue,24]
+LoseText = Awww! You just lucked out!
+Pokemon = PIDGEY,9
+    Moves = TACKLE,GUST,SANDATTACK
+Pokemon = EEVEE,9
+#-------------------------------
+[RIVAL1,Blue,25]
+LoseText = Awww! You just lucked out!
+Pokemon = PIDGEY,9
+    Moves = TACKLE,GUST,SANDATTACK
+Pokemon = PIKACHU,9
+#-------------------------------
+[RIVAL1,Blue,34]
+LoseText = Hey! Take it easy! You won already!
+Pokemon = PIDGEOTTO,17
+    Moves = TACKLE,QUICKATTACK,GUST,SANDATTACK
+Pokemon = ABRA,16
+    Moves = TELEPORT
+Pokemon = RATTATA,15
+    Moves = TACKLE,QUICKATTACK,TAILWHIP
+Pokemon = EEVEE,18
+#-------------------------------
+[RIVAL1,Blue,35]
+LoseText = Hey! Take it easy! You won already!
+Pokemon = PIDGEOTTO,17
+    Moves = TACKLE,QUICKATTACK,GUST,SANDATTACK
+Pokemon = ABRA,16
+    Moves = TELEPORT
+Pokemon = RATTATA,15
+    Moves = TACKLE,QUICKATTACK,TAILWHIP
+Pokemon = PIKACHU,18
+#-------------------------------
+[RIVAL1,Blue,44]
+LoseText = Humph! At least you're raising your Pokémon!
+Pokemon = PIDGEOTTO,19
+    Moves = TACKLE,QUICKATTACK,GUST,SANDATTACK
+Pokemon = RATICATE,16
+    Moves = TACKLE,QUICKATTACK,HYPERFANG,TAILWHIP
+Pokemon = KADABRA,18
+    Moves = CONFUSION,DISABLE,KINESIS,TELEPORT
+Pokemon = EEVEE,20
+#-------------------------------
+[RIVAL1,Blue,45]
+LoseText = Humph! At least you're raising your Pokémon!
+Pokemon = PIDGEOTTO,19
+    Moves = TACKLE,QUICKATTACK,GUST,SANDATTACK
+Pokemon = RATICATE,16
+    Moves = TACKLE,QUICKATTACK,HYPERFANG,TAILWHIP
+Pokemon = KADABRA,18
+    Moves = CONFUSION,DISABLE,KINESIS,TELEPORT
+Pokemon = PIKACHU,20
+#-------------------------------
