@@ -8,7 +8,7 @@
 #  Calaculating best way to spread badges
 #===============================================================================
 module BadgecaseUtilities
-  def self.getBadgePositions(badgecount=16)
+  def self.getBadgePositions(badgecount=24)
     @@width = Graphics.width - 32
     @@height = Graphics.height - 44 - 76
     bestPositionsx=[]

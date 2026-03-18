@@ -2274,3 +2274,26 @@ Pokemon = KADABRA,18
     Moves = CONFUSION,DISABLE,KINESIS,TELEPORT
 Pokemon = PIKACHU,20
 #-------------------------------
+[BIKER,Goon]
+LoseText = ...
+Pokemon = SALAZZLE,49
+Pokemon = WATCHOG,49
+#-------------------------------
+[BIKER,Goon,1]
+LoseText = "..."
+Pokemon = TOXAPEX,50
+#-------------------------------
+[BIKER,Goon,2]
+LoseText = "..."
+Pokemon = SKUNTANK,50
+#-------------------------------
+[CUEBALL,Paxton]
+LoseText = "..."
+Pokemon = SEVIPER,51
+Pokemon = GARBODOR,51
+#-------------------------------
+[TWINS,Joy & Meg]
+LoseText = "..."
+Pokemon = SLURPUFF,52
+Pokemon = AROMATISSE,52
+#-------------------------------

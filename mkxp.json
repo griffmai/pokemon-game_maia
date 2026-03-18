@@ -22,7 +22,7 @@
 
     // The path to the game window's icon. For Linux only. (Default: none)
     //
-    // "iconPath": "/path/to/icon.png",
+     "iconPath": "/graphics/Icons/windowicon.png",
 
     // Enable F12 to make the game soft reset.
     //
