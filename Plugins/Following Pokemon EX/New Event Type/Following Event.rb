@@ -175,8 +175,11 @@ class Game_FollowingPkmn < Game_Follower
           
           # Check for blocking events (excluding through events)
           blocked_by_event = map.events.values.any? do |e|
-            !e.through && e.at_coordinate?(t[1], t[2]) && e != self && e != leader
-          end
+			next false if e == self || e == leader
+			next false if e.through
+			next false if e.character_name.nil? || e.character_name.empty?
+			e.at_coordinate?(t[1], t[2])
+			end
           next if blocked_by_event
           
           # Check passability using the follower itself (self)
