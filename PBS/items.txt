@@ -6960,6 +6960,7 @@ Name = Hatchet
 NamePlural = Hatchets
 Pocket = 8
 Price = 0
+FieldUse = Direct
 Flags = KeyItem
 Description = A key item the allows the use of CUT.
 #-------------------------------
@@ -6968,6 +6969,7 @@ Name = Power Glove
 NamePlural = Power Gloves
 Pocket = 8
 Price = 0
+FieldUse = Direct
 Flags = KeyItem
 Description = A key item the allows the use of Rock Smash.
 #-------------------------------
@@ -6976,6 +6978,7 @@ Name = Power Bracelet
 NamePlural = Power Bracelets
 Pocket = 8
 Price = 0
+FieldUse = Direct
 Flags = KeyItem
 Description = A key item the allows the use of Strength.
 #-------------------------------
@@ -6984,6 +6987,7 @@ Name = Surfboard
 NamePlural = Surfboards
 Pocket = 8
 Price = 0
+FieldUse = Direct
 Flags = KeyItem
 Description = A key item the allows the use of Surf.
 #-------------------------------
@@ -6992,6 +6996,7 @@ Name = Flight Call
 NamePlural = Flight Calls
 Pocket = 8
 Price = 0
+FieldUse = Direct
 Flags = KeyItem
 Description = A key item the allows the use of Fly.
 #-------------------------------
@@ -7000,5 +7005,6 @@ Name = Nightvision Goggles
 NamePlural = Nightvision Goggles
 Pocket = 8
 Price = 0
+FieldUse = Direct
 Flags = KeyItem
 Description = A key item the allows the use of Flash.
