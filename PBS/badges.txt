@@ -88,7 +88,7 @@ LeaderSprite = LEADER_Falkner
 Location = Violet City
 AcePokemon = PIDGEOTTO
 Region = Johto
-Order = 1
+Order = 17
 #-------------------------------
 [HIVEBADGE]
 Name = Hive Badge
@@ -98,7 +98,7 @@ LeaderSprite = LEADER_Bugsy
 Location = Azalea Town
 AcePokemon = SCYTHER
 Region = Johto
-Order = 2
+Order = 18
 #-------------------------------
 [PLAINBADGE]
 Name = Plain Badge
@@ -108,7 +108,7 @@ LeaderSprite = LEADER_Whitney
 Location = Goldenrod City
 AcePokemon = MILTANK
 Region = Johto
-Order = 3
+Order = 19
 #-------------------------------
 [FOGBADGE]
 Name = Fog Badge
@@ -118,7 +118,7 @@ LeaderSprite = LEADER_Morty
 Location = Ecruteak City
 AcePokemon = GENGAR
 Region = Johto
-Order = 4
+Order = 20
 #-------------------------------
 [STORMBADGE]
 Name = Storm Badge
@@ -128,7 +128,7 @@ LeaderSprite = LEADER_Chuck
 Location = Cianwood City
 AcePokemon = POLIWRATH
 Region = Johto
-Order = 5
+Order = 21
 #-------------------------------
 [MINERALBADGE]
 Name = Mineral Badge
@@ -138,7 +138,7 @@ LeaderSprite = LEADER_Jasmine
 Location = Olivine City
 AcePokemon = STEELIX
 Region = Johto
-Order = 6
+Order = 22
 #-------------------------------
 [GLACIERBADGE]
 Name = Glacier Badge
@@ -148,7 +148,7 @@ LeaderSprite = LEADER_Pryce
 Location = Mahogany Town
 AcePokemon = PILOSWINE
 Region = Johto
-Order = 7
+Order = 23
 #-------------------------------
 [RISINGBADGE]
 Name = Rising Badge
@@ -158,7 +158,7 @@ LeaderSprite = LEADER_Clair
 Location = Blackthorn City
 AcePokemon = KINGDRA
 Region = Johto
-Order = 8
+Order = 24
 #-------------------------------
 [STONEBADGE]
 Name = Stone Badge
@@ -168,7 +168,7 @@ LeaderSprite = LEADER_Roxanne
 Location = Rustboro City
 AcePokemon = NOSEPASS
 Region = Hoenn
-Order = 1
+Order = 9
 #-------------------------------
 [KNUCKLEBADGE]
 Name = Knuckle Badge
@@ -178,7 +178,7 @@ LeaderSprite = LEADER_Brawly
 Location = Dewford Town
 AcePokemon = MAKUHITA
 Region = Hoenn
-Order = 2
+Order = 10
 #-------------------------------
 [DYNAMOBADGE]
 Name = Dynamo Badge
@@ -188,7 +188,7 @@ LeaderSprite = LEADER_Wattson
 Location = Mauville City
 AcePokemon = MANECTRIC
 Region = Hoenn
-Order = 3
+Order = 11
 #-------------------------------
 [HEATBADGE]
 Name = Heat Badge
@@ -198,7 +198,7 @@ LeaderSprite = LEADER_Flannery
 Location = Lavaridge Town
 AcePokemon = TORKOAL
 Region = Hoenn
-Order = 4
+Order = 12
 #-------------------------------
 [BALANCEBADGE]
 Name = Balance Badge
@@ -208,7 +208,7 @@ LeaderSprite = LEADER_Norman
 Location = Petalburg City
 AcePokemon = SLAKING
 Region = Hoenn
-Order = 5
+Order = 13
 #-------------------------------
 [FEATHERBADGE]
 Name = Feather Badge
@@ -218,7 +218,7 @@ LeaderSprite = LEADER_Winona
 Location = Fortree City
 AcePokemon = ALTARIA
 Region = Hoenn
-Order = 6
+Order = 14
 #-------------------------------
 [MINDBADGE]
 Name = Mind Badge
@@ -228,7 +228,7 @@ LeaderSprite = LEADER_Tate_and_Liza
 Location = Mossdeep City
 AcePokemon = CLAYDOL
 Region = Hoenn
-Order = 7
+Order = 15
 #-------------------------------
 [RAINBADGE]
 Name = Rain Badge
@@ -238,85 +238,5 @@ LeaderSprite = LEADER_Wallace
 Location = Sootopolis City
 AcePokemon = MILOTIC
 Region = Hoenn
-Order = 8
-#-------------------------------
-[COALBADGE]
-Name = Coal Badge
-Type = ROCK
-LeaderName = Roark
-LeaderSprite = LEADER_Roark
-Location = Oreburgh City
-AcePokemon = CRANIDOS
-Region = Sinnoh
-Order = 1
-#-------------------------------
-[FORESTBADGE]
-Name = Forest Badge
-Type = GRASS
-LeaderName = Gardenia
-LeaderSprite = LEADER_Gardenia
-Location = Eterna City
-AcePokemon = ROSERADE
-Region = Sinnoh
-Order = 2
-#-------------------------------
-[COBBLEBADGE]
-Name = Cobble Badge
-Type = FIGHTING
-LeaderName = Maylene
-LeaderSprite = LEADER_Maylene
-Location = Veilstone City
-AcePokemon = LUCARIO
-Region = Sinnoh
-Order = 3
-#-------------------------------
-[FENBADGE]
-Name = Fen Badge
-Type = WATER
-LeaderName = Crasher Wake
-LeaderSprite = LEADER_Crasher_Wake
-Location = Pastoria City
-AcePokemon = FLOATZEL
-Region = Sinnoh
-Order = 4
-#-------------------------------
-[RELICBADGE]
-Name = Relic Badge
-Type = GHOST
-LeaderName = Fantina
-LeaderSprite = LEADER_Fantina
-Location = Hearthome City
-AcePokemon = MISMAGIUS
-Region = Sinnoh
-Order = 5
-#-------------------------------
-[MINEBADGE]
-Name = Mine Badge
-Type = STEEL
-LeaderName = Byron
-LeaderSprite = LEADER_Byron
-Location = Canalave City
-AcePokemon = BASTIODON
-Region = Sinnoh
-Order = 6
-#-------------------------------
-[ICICLEBADGE]
-Name = Icicle Badge
-Type = ICE
-LeaderName = Candice
-LeaderSprite = LEADER_Candice
-Location = Snowpoint City
-AcePokemon = ABOMASNOW
-Region = Sinnoh
-Order = 7
-#-------------------------------
-[BEACONBADGE]
-Name = Beacon Badge
-Type = ELECTRIC
-LeaderName = Volkner
-LeaderSprite = LEADER_Volkner
-Location = Sunyshore City
-AcePokemon = LUXRAY
-Region = Sinnoh
-Order = 8
+Order = 16
 #-------------------------------

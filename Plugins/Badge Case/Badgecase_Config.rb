@@ -10,9 +10,9 @@ module BadgecaseSetting
   SHOW_UNOBTAINED_BADGES = false
 
   # The badgecase number of rows (set 0 to calculate ideal)
-  BADGECASE_ROWS = 0
+  BADGECASE_ROWS = 3
   # The badgecase number of columns (set 0 to calculate ideal)
-  BADGECASE_COLUMNS = 0
+  BADGECASE_COLUMNS = 8
 
   # Should the UI always show the badge name (or only when obtained)
   BADGE_NAME_ALWAYS = true

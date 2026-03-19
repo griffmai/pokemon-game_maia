@@ -6240,18 +6240,6 @@ FrontSprite = 1,17
 ShadowX = 0
 ShadowSize = 1
 #-------------------------------
-[JELLY]
-BackSprite = 0,0
-FrontSprite = 0,3
-ShadowX = 0
-ShadowSize = 2
-#-------------------------------
-[BILLY]
-BackSprite = 0,35
-FrontSprite = -3,18
-ShadowX = 0
-ShadowSize = 1
-#-------------------------------
 [CUBONE_1]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -6467,3 +6455,39 @@ BackSprite = 0,0
 FrontSprite = 0,0
 ShadowX = 0
 ShadowSize = 2
+#-------------------------------
+[LUGIA_1]
+BackSprite = 3,36
+FrontSprite = -9,-10
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
+[MIMEJR_1]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[SLOWKING_1]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[MISSINGNO]
+BackSprite = 0,0
+FrontSprite = 0,24
+ShadowX = 0
+ShadowSize = 0
+#-------------------------------
+[PIKACHU_2]
+BackSprite = 2,54
+FrontSprite = 5,28
+ShadowX = 0
+ShadowSize = 1
+#-------------------------------
+[EEVEE_1]
+BackSprite = 0,48
+FrontSprite = 2,31
+ShadowX = 0
+ShadowSize = 1

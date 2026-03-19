@@ -8,7 +8,7 @@
 #  Calaculating best way to spread badges
 #===============================================================================
 module BadgecaseUtilities
-  def self.getBadgePositions(badgecount=8)
+  def self.getBadgePositions(badgecount=24)
     @@width = Graphics.width - 32
     @@height = Graphics.height - 44 - 76
     bestPositionsx=[]
@@ -95,9 +95,9 @@ class BadgeCase_Scene
     @viewport.z = 99999
     @badgeindex = 0
     @badgepage = false
-    @regions = $PokemonGlobal.badges.get_all_regions
-    @regionindex = 0
-    @badges = $PokemonGlobal.badges.all_badges_information.select {|badge| badge.region == @regions[@regionindex]} if @regions.length > 1
+	@regions = []
+	@regionindex = 0
+	@badges = $PokemonGlobal.badges.all_badges_information
     @angle = 0
     @sprites = {}
     @sprites["background"] = IconSprite.new(0,0,@viewport)
@@ -269,23 +269,26 @@ class BadgeCase_Scene
     @sprites["badgecursor"].y = @badgePositions[1][@badgeindex]
   end
 
-  def updateBadges
-    @badges = $PokemonGlobal.badges.all_badges_information.select {|badge| badge.region == @regions[@regionindex]} if @regions.length > 1
-    @badgePositions = getBadgePositions(@badges.length)
-    for i in 0...@badges.length
-      @sprites["badge#{i}"] = IconSprite.new(0,0,@viewport) if !@sprites["badge#{i}"]
-      @sprites["badge#{i}"].setBitmap("Graphics/UI/Badgecase/Badges/#{@badges[i].id}")
-      @sprites["badge#{i}"].zoom_x = @badgePositions[2][0] / @sprites["badge#{i}"].src_rect.width.to_f
-      @sprites["badge#{i}"].zoom_y = @sprites["badge#{i}"].zoom_x
-      @sprites["badge#{i}"].x = @badgePositions[0][i]
-      @sprites["badge#{i}"].y = @badgePositions[1][i]
-    end
-    for i in @badges.length...$PokemonGlobal.badges.all_badges.length
-      pbDisposeSprite(@sprites, "badge#{i}") if @sprites["badge#{i}"]
-    end
-    @sprites["badgecursor"].zoom_x = @badgePositions[2][0] / @sprites["badgecursor"].src_rect.width.to_f
-    @sprites["badgecursor"].zoom_y = @sprites["badgecursor"].zoom_x
+def updateBadges
+  @badges = $PokemonGlobal.badges.all_badges_information
+  @badgePositions = BadgecaseUtilities.getBadgePositions(@badges.length)
+
+  for i in 0...@badges.length
+    @sprites["badge#{i}"] = IconSprite.new(0, 0, @viewport) if !@sprites["badge#{i}"]
+    @sprites["badge#{i}"].setBitmap("Graphics/UI/Badgecase/Badges/#{@badges[i].id}")
+    @sprites["badge#{i}"].zoom_x = @badgePositions[2][0] / @sprites["badge#{i}"].src_rect.width.to_f
+    @sprites["badge#{i}"].zoom_y = @sprites["badge#{i}"].zoom_x
+    @sprites["badge#{i}"].x = @badgePositions[0][i]
+    @sprites["badge#{i}"].y = @badgePositions[1][i]
   end
+
+  for i in @badges.length...$PokemonGlobal.badges.all_badges.length
+    pbDisposeSprite(@sprites, "badge#{i}") if @sprites["badge#{i}"]
+  end
+
+  @sprites["badgecursor"].zoom_x = @badgePositions[2][0] / @sprites["badgecursor"].src_rect.width.to_f
+  @sprites["badgecursor"].zoom_y = @sprites["badgecursor"].zoom_x
+end
 
   def pbScene
     loop do
