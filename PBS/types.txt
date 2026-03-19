@@ -132,3 +132,8 @@ Immunities = DRAGON
 Name = Shadow
 IconPosition = 19
 IsSpecialType = true
+#-------------------------------
+[VIRUS]
+Name = Shadow
+IconPosition = 20
+IsSpecialType = true
